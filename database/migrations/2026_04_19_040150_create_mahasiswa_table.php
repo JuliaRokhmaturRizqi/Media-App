@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->id('mahasiswa_id');
             $table->string('nim');
-            $table->string('nama_lemgkap');
+            $table->string('nama_lengkap');
 
             //relasi ke tabel prodi (fereign key)
             $table->foreignId('prodi_id')->references('prodi_id')->on('prodi');
